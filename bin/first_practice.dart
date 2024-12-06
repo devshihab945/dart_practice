@@ -1,195 +1,98 @@
 void main (){
 
-  // These are from pre recorded video Ostad Flutter Course
-
-  // print("Hello this is Md Shihab Mia\nI'm an Android App Developer.");
-
-  // array and list
+  // if else else if
   /*
-  var a = [1,2,3];
-  a.add(4);
+  var marks = 70;
 
-  a.addAll([5,6,7]);
-  print(a);
+  if(marks >= 80){
+    print("Result is A+");
+  } else if (marks <80 && marks >=70){
+    print("Result is A-");
+  }
+  else {
+    print("Result is below A-");
+  }
    */
 
-  // map
+  // switch case
   /*
-  var student = {
+  var marks = 70;
 
-    'name' : 'shihab',
-    'age' : 24,
-    'Mobile' : 010706386080
+  switch (marks){
 
-  };
+    case 60:
+      print("A");
+      break;
 
-  print(student['name']);
+    case 70:
+      print("A-");
+      break;
 
+    case 80:
+      print("A+");
+      break;
 
+    default:
+      print("Result Not Found!");
+      break;
+  }
    */
 
-  // operator
+  // loop
   /*
-  var a = 10, b = 20;
-
-  print(a+b);
-  print(a-b);
-  print(a*b);
-  print(a/b);
-  print(a%b);
+  for(int i=0; i<5; i++){
+    print("Hi $i");
+  }
    */
 
-  // dart constant var
-  /*
-  var x = 10 ;
-  final y = 20;
-  const z = 30;
-
-   x = 20;
-   // y = 20; // these will show error
-   // z = 30; // these will show error
-
-  print(x);
-  print(y);
-  print(z);
-   */
-
-  // list property
   /*
   var city = ["Dhaka", "Rangpur", "Rajshahi"];
 
-  // var result = city.length;
-  // var result = city.first;
-  // var result = city.last;
-  // var result = city.reversed;
-  // var result = city.isEmpty;
-  // var result = city.isNotEmpty;
-  // var result = city.single; // if item size is only 1
-  var result = city.single;
-
-  print(result);
+  for(var singleCity in city){
+    print(singleCity);
+  }
    */
 
-  // fixed & growable list
+  // for in loop on json map
   /*
-  var city = ["Dhaka", "Rangpur", "Rajshahi"];
+  var itemList = [
 
-  print(city);
+    {
+      'name' : 'sope', 'price' : 20
+    },{
+      'name' : 'oil', 'price' : 180
+    },{
+      'name' : 'med', 'price' : 20
+    },{
+      'name' : 'cake', 'price' : 20
+    }
 
-  city.add("Khula");
-  print(city);
+  ];
 
-  city.addAll(["Tangail", "Moymunshing", "Noakhali"]);
-  print(city);
-   */
+  for (var oneItem in itemList){
+
+    var item = "Item name is ${oneItem['name']} and Price is = ${oneItem['price']}tk";
+    print(item);
+
+  }
+  */
+
+  // while loop
   /*
-  const city_copy = ["Dhaka", "Rangpur", "Rajshahi"];
-
-  city_copy.add("Mirpur"); // it be show error bcz of fixed length of const city_copy
-
-  print(city_copy);
-   */
-
-  // data insertion on list
-  /*
-  var a = [1,2,3];
-  a.add(4);
-  print(a);
-
-  a.addAll([5,6,7]);
-  print(a);
-
-  a.insert(0, 0);
-  print(a);
-
-  a.insertAll(4, [11,22,33]);
-  print(a);
+  var i = 0;
+  while(i<5){
+    print(i);
+    i++;
+  }
    */
 
-  // data deletion, and update on list
+  // do while
   /*
-  var num = [1,2,3,4,5,6];
-
-  num[0]=0;
-  print(num);
-  //
-  // num.remove(0);
-  //
-  // print(num);
-  //
-  // num.removeLast();
-  // print(num);
-
-  num.removeAt(4);
-  print(num);
-   */
-
-  // dart set
-  /*
-  var mySet = <String> {'Mouse', 'Keyboard', 'Monitor'}; // all will same data type , don't use duplicate only use unique
-
-  print(mySet);
-
-  mySet.add('Ram');
-  print(mySet);
-
-  mySet.addAll({'SSD', 'HDD'});
-  print(mySet);
-   */
-
-  // set element at , clear
-  /*
-  var mySet = <String> {'Mouse', 'Keyboard', 'Monitor'};
-
-  print(mySet.elementAt(0));
-
-  mySet.clear();
-  print(mySet);
-   */
-
-
-  // add new element on map
-  /*
-  var student = {
-
-    'name' : 'shihab',
-    'age' : 24,
-    'Mobile' : 010706386080
-
-  };
-
-  student['id']=222002155;
-
-  print(student);
-   */
-
-  // map using object
-  /*
-  var student = new Map();
-  student['name']='Shihab';
-  student['age']=24;
-  student['Mobile']=01706386080;
-
-  print(student);
-  print(student.keys);
-  print(student.values);
-   */
-
-  // map add, remove , clear
-  /*
-  var student = {
-
-    'name' : 'shihab',
-    'age' : 24,
-    'Mobile' : 010706386080
-
-  };
-
-  student.addAll({'Blood Group': 'B+', 'section': '222D1'});
-  print(student);
-  student.remove('section'); // single element remove
-  // student.clear(); // all map clear
-  print(student);
+  var i = 0;
+  do{
+    print(i);
+    i++;
+  } while (i<5);
    */
 
 
